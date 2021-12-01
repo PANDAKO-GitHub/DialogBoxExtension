@@ -1,4 +1,5 @@
 # DialogBoxExtension for GDevelop
+Please download and use "DialogBoxExtension0.0.0.json".
 
 ## Summary
 This extension adds Dialog Box functionality that can be used for RPGs, visual novels, and more.

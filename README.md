@@ -11,20 +11,20 @@ This extension adds Dialog Box functionality that can be used for RPGs, visual n
 1. After that, execute the "Open Dialog Box" action, "Close Dialog Box" action, etc.
 
 ## This extension add:
-**Dialog Box** - behavior
-**Setup Dialog Box** - action
-**Open Dialog Box** - action
-**Close Dialog Box** - action
-**Change Dialog Box Text** - action
-**Change Dialog Box contents** - action
-**Change Dialog Box typing sound** - action
-**Change Dialog Box typing interval** - action
-**Skip Dialog Box typing** - action
-**Dialog Box is open** - condition
-**Dialog Box is typing** - condition
-**Dialog Box is close** - condition
-**Number of times the Text in Dialog Box has changed** - condition
-**Number of times the Text in Dialog Box has changed** - expression
+**Dialog Box** - behavior  
+**Setup Dialog Box** - action  
+**Open Dialog Box** - action  
+**Close Dialog Box** - action  
+**Change Dialog Box Text** - action  
+**Change Dialog Box contents** - action  
+**Change Dialog Box typing sound** - action  
+**Change Dialog Box typing interval** - action  
+**Skip Dialog Box typing** - action  
+**Dialog Box is open** - condition  
+**Dialog Box is typing** - condition  
+**Dialog Box is close** - condition  
+**Number of times the Text in Dialog Box has changed** - condition  
+**Number of times the Text in Dialog Box has changed** - expression  
 
 ## Tips
 This Dialog Box has a useful counter function.  

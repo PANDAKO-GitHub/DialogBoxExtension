@@ -16,7 +16,7 @@
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
-    "version": "1.0.0",
+    "version": "1.1.0",
     "name": "Dialog Box Extension Example",
     "author": "PANDAKO",
     "windowWidth": 800,
@@ -176,6 +176,23 @@
         "name": "assets\\typing2.wav",
         "preloadAsMusic": false,
         "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Green tank (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Green tank (1).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "disablePreload": false,
+        "file": "DialogTree.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "DialogTree.json",
         "userAdded": true
       }
     ],
@@ -894,6 +911,888 @@
           "type": "Tween::TweenBehavior"
         }
       ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Example2WithDialogTree",
+      "name": "Example2WithDialogTree",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.6999999999999997,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [
+        {
+          "name": "Dialog",
+          "type": "structure",
+          "children": [
+            {
+              "name": "Image",
+              "type": "string",
+              "value": "Green"
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Tank"
+            },
+            {
+              "name": "Text",
+              "type": "string",
+              "value": "Hi!"
+            }
+          ]
+        }
+      ],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 154,
+          "layer": "",
+          "locked": false,
+          "name": "DialogBox",
+          "persistentUuid": "835ffc1c-de60-4de5-a1a0-88d7833a7e92",
+          "width": 627,
+          "x": 469,
+          "y": 92,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 96,
+          "layer": "",
+          "locked": false,
+          "name": "DialogBox_Image",
+          "persistentUuid": "bbf5049d-2a19-41f1-ab4e-40d68cc96e95",
+          "width": 121,
+          "x": 19,
+          "y": 28,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "DialogBox_Arrow",
+          "persistentUuid": "0ab2fa3a-6c57-487a-be0a-f9f5e603b773",
+          "width": 0,
+          "x": 720,
+          "y": 109,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 37,
+          "layer": "",
+          "locked": false,
+          "name": "DialogBox_Name",
+          "persistentUuid": "1d989988-8fa4-4d66-8d81-528787d525f3",
+          "width": 127,
+          "x": 21,
+          "y": 130,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 96,
+          "layer": "",
+          "locked": false,
+          "name": "DialogBox_Text",
+          "persistentUuid": "035249d3-cfda-4c5a-b229-3d12e56bd868",
+          "width": 525,
+          "x": 190,
+          "y": 45,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "name": "DialogBox",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "DialogBoxBackGround",
+              "type": "DialogBox::DialogBoxBackGround",
+              "Interval": 0.05,
+              "Se": "typing1.wav",
+              "Tween": "Tween",
+              "Duration": 250,
+              "TypingSound": "typing1.wav"
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Brown panel_Shadow.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 202,
+                        "y": 53
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "DialogBox_Image",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Green",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.02500000037252903,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Green tank (1).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Desert",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Desert tank (1).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "DialogBox_Arrow",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Pressed",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.5,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Down Button Yellow_Pressed.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Down Button Yellow_Unpressed.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "DialogBox_Name",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "Name",
+            "opacity": 255,
+            "fontSize": 20,
+            "visible": true,
+            "color": "0;0;0",
+            "fontFamily": "Arial",
+            "align": "left",
+            "wordWrap": true
+          }
+        },
+        {
+          "name": "DialogBox_Text",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "Text\nText",
+            "opacity": 255,
+            "fontSize": 20,
+            "visible": true,
+            "color": "0;0;0",
+            "fontFamily": "Arial",
+            "align": "left",
+            "wordWrap": true
+          }
+        }
+      ],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DialogBox::DialogBoxBackGround::Setup"
+              },
+              "parameters": [
+                "DialogBox",
+                "DialogBoxBackGround",
+                "DialogBox_Name",
+                "DialogBox_Image",
+                "DialogBox_Text",
+                "DialogBox_Arrow",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "DialogueTree::LoadDialogueFromJsonFile"
+              },
+              "parameters": [
+                "",
+                "DialogTree.json"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "z"
+                  ],
+                  "subInstructions": []
+                }
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DialogBox::DialogBoxBackGround::IsClose"
+                  },
+                  "parameters": [
+                    "DialogBox",
+                    "DialogBoxBackGround",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DialogueTree::StartDialogueFromBranch"
+                  },
+                  "parameters": [
+                    "\"Start\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DialogBox::DialogBoxBackGround::IsTyping"
+                  },
+                  "parameters": [
+                    "DialogBox",
+                    "DialogBoxBackGround",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DialogBox::DialogBoxBackGround::SkipTyping"
+                  },
+                  "parameters": [
+                    "DialogBox",
+                    "DialogBoxBackGround",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "DialogBox::DialogBoxBackGround::IsTyping"
+                  },
+                  "parameters": [
+                    "DialogBox",
+                    "DialogBoxBackGround",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DialogBox::DialogBoxBackGround::SkipTyping"
+                  },
+                  "parameters": [
+                    "DialogBox",
+                    "DialogBoxBackGround",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "The dialog in this example can display three lines.",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "Dialog.Text",
+                        "=",
+                        "\"\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Repeat",
+                  "repeatExpression": "3",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "Dialog.Text",
+                        "+",
+                        "DialogueTree::LineText() + NewLine()"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "DialogueTree::GoToNextLine"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "DialogueTree::IsCommandCalled"
+                          },
+                          "parameters": [
+                            "\"Name\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "White space cannot be used in command parameters.",
+                          "comment2": ""
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "StrEqual"
+                              },
+                              "parameters": [
+                                "DialogueTree::CommandParameter(0)",
+                                "=",
+                                "\"GreenTank\""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarSceneTxt"
+                              },
+                              "parameters": [
+                                "Dialog.Name",
+                                "=",
+                                "\"Green Tank\""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "StrEqual"
+                              },
+                              "parameters": [
+                                "DialogueTree::CommandParameter(0)",
+                                "=",
+                                "\"DesertTank\""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarSceneTxt"
+                              },
+                              "parameters": [
+                                "Dialog.Name",
+                                "=",
+                                "\"Desert Tank\""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "DialogueTree::IsCommandCalled"
+                          },
+                          "parameters": [
+                            "\"Image\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarSceneTxt"
+                          },
+                          "parameters": [
+                            "Dialog.Image",
+                            "=",
+                            "DialogueTree::CommandParameter(0)"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "DialogueTree::IsDialogueRunning"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "DialogBox::DialogBoxBackGround::Close"
+                      },
+                      "parameters": [
+                        "DialogBox",
+                        "DialogBoxBackGround",
+                        "\"Desert Tank\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "DialogBox::DialogBoxBackGround::IsOpen"
+                      },
+                      "parameters": [
+                        "DialogBox",
+                        "DialogBoxBackGround",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "DialogBox::DialogBoxBackGround::ChangeNameImageText"
+                      },
+                      "parameters": [
+                        "DialogBox",
+                        "DialogBoxBackGround",
+                        "VariableString(Dialog.Name)",
+                        "VariableString(Dialog.Image)",
+                        "VariableString(Dialog.Text)",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "DialogBox::DialogBoxBackGround::IsClose"
+                      },
+                      "parameters": [
+                        "DialogBox",
+                        "DialogBoxBackGround",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "DialogBox::DialogBoxBackGround::Open"
+                      },
+                      "parameters": [
+                        "DialogBox",
+                        "DialogBoxBackGround",
+                        "VariableString(Dialog.Name)",
+                        "VariableString(Dialog.Image)",
+                        "VariableString(Dialog.Text)",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 0,
+          "ambientLightColorG": 0,
+          "ambientLightColorR": 0,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "DialogBoxBackGround",
+          "type": "DialogBox::DialogBoxBackGround"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ]
     }
   ],
   "externalEvents": [],
@@ -908,7 +1807,7 @@
       "name": "DialogBox",
       "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/Line Hero Pack/Master/SVG/UI Essentials/UI Essentials_chat_message_sms.svg",
       "shortDescription": "This extension adds Dialog Box functionality that can be used for RPGs, visual novels, and more.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "dialog"
       ],
@@ -945,9 +1844,9 @@
                       },
                       "parameters": [
                         "Object",
-                        "_DialogBoxBackGround.Se",
+                        "_DialogBoxBackGround.TypingSound",
                         "=",
-                        "Object.Behavior::PropertySe()"
+                        "Object.Behavior::PropertyTypingSound()"
                       ],
                       "subInstructions": []
                     },
@@ -984,8 +1883,8 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "let dbbg = objects[0]._DialogBoxBackGround = {};\ndbbg.Bg = {name:objects[0].name, id:objects[0].id};\ndbbg.Name = {name:eventsFunctionContext.getObjects(\"Name\")[0].name, id:eventsFunctionContext.getObjects(\"Name\")[0].id};\ndbbg.Text = {name:eventsFunctionContext.getObjects(\"Text\")[0].name, id:eventsFunctionContext.getObjects(\"Text\")[0].id};\ndbbg.Img = {name:eventsFunctionContext.getObjects(\"Img\")[0].name, id:eventsFunctionContext.getObjects(\"Img\")[0].id};\ndbbg.Arrow = {name:eventsFunctionContext.getObjects(\"Arrow\")[0].name, id:eventsFunctionContext.getObjects(\"Arrow\")[0].id};\ndbbg.SeName = objects[0].getVariables().get(\"_DialogBoxBackGround\").getChild(\"Se\").getAsString();\ndbbg.Interval = objects[0].getVariables().get(\"_DialogBoxBackGround\").getChild(\"Interval\").getAsNumber();\ndbbg.Duration = objects[0].getVariables().get(\"_DialogBoxBackGround\").getChild(\"Duration\").getAsNumber();\ndbbg.State = \"Close\";\ndbbg.Width = objects[0].getWidth();\ndbbg.Height = objects[0].getHeight();\ndbbg.TextBuffer = \"\";\ndbbg.Cnt = 0;\ndbbg.CntFlag = false;\n\nif (dbbg.SeName != \"\") {\n    //runtimeScene.getSoundManager().loadAudio(dbbg.SeName, false);\n    dbbg.Se = runtimeScene.getSoundManager().createHowlerSound(dbbg.SeName, false, 1, false, 1);\n}\n\nobjects[0].hide(true);\neventsFunctionContext.getObjects(\"Name\")[0].hide(true);\neventsFunctionContext.getObjects(\"Text\")[0].hide(true);\neventsFunctionContext.getObjects(\"Img\")[0].hide(true);\neventsFunctionContext.getObjects(\"Arrow\")[0].hide(true);\nobjects[0].pauseTimer(\"_DialogBoxBackGroundInterval\");\n",
-                  "parameterObjects": "Object",
+                  "inlineCode": "const ThisObject = eventsFunctionContext.getObjects(\"Object\")[0];\nconst Behavior = ThisObject.getBehavior(eventsFunctionContext.getBehaviorName(\"Behavior\"));\nlet dbbg = Behavior._DialogBoxBackGround = {};\n//let dbbg = ThisObject._DialogBoxBackGround = {};\ndbbg.Bg = {name:ThisObject.name, id:ThisObject.id};\ndbbg.Name = {name:eventsFunctionContext.getObjects(\"Name\")[0].name, id:eventsFunctionContext.getObjects(\"Name\")[0].id};\ndbbg.Text = {name:eventsFunctionContext.getObjects(\"Text\")[0].name, id:eventsFunctionContext.getObjects(\"Text\")[0].id};\ndbbg.Img = {name:eventsFunctionContext.getObjects(\"Img\")[0].name, id:eventsFunctionContext.getObjects(\"Img\")[0].id};\ndbbg.Arrow = {name:eventsFunctionContext.getObjects(\"Arrow\")[0].name, id:eventsFunctionContext.getObjects(\"Arrow\")[0].id};\ndbbg.SeName = ThisObject.getVariables().get(\"_DialogBoxBackGround\").getChild(\"TypingSound\").getAsString();\ndbbg.Interval = ThisObject.getVariables().get(\"_DialogBoxBackGround\").getChild(\"Interval\").getAsNumber();\ndbbg.Duration = ThisObject.getVariables().get(\"_DialogBoxBackGround\").getChild(\"Duration\").getAsNumber();\ndbbg.State = \"Close\";\ndbbg.Width = ThisObject.getWidth();\ndbbg.Height = ThisObject.getHeight();\ndbbg.TextBuffer = \"\";\ndbbg.Cnt = 0;\ndbbg.CntFlag = false;\n\nif (dbbg.SeName != \"\") {\n    //runtimeScene.getSoundManager().loadAudio(dbbg.SeName, false);\n    dbbg.Se = runtimeScene.getSoundManager().createHowlerSound(dbbg.SeName, false, 1, false, 1);\n}\n\nThisObject.hide(true);\neventsFunctionContext.getObjects(\"Name\")[0].hide(true);\neventsFunctionContext.getObjects(\"Text\")[0].hide(true);\neventsFunctionContext.getObjects(\"Img\")[0].hide(true);\neventsFunctionContext.getObjects(\"Arrow\")[0].hide(true);\nThisObject.pauseTimer(\"_DialogBoxBackGroundInterval\");\n",
+                  "parameterObjects": "",
                   "useStrict": true,
                   "eventsSheetExpanded": true
                 }
@@ -1066,7 +1965,7 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "let dbbg = eventsFunctionContext.getObjects(\"Object\")[0]._DialogBoxBackGround;\r\nif (!dbbg) {return}\r\nconst BgIndex = runtimeScene.getObjects(dbbg.Bg.name).findIndex(v => v.id === dbbg.Bg.id);\r\nconst NameIndex = runtimeScene.getObjects(dbbg.Name.name).findIndex(v => v.id === dbbg.Name.id);\r\nconst TextIndex = runtimeScene.getObjects(dbbg.Text.name).findIndex(v => v.id === dbbg.Text.id);\r\nconst ImgIndex = runtimeScene.getObjects(dbbg.Img.name).findIndex(v => v.id === dbbg.Img.id);\r\nconst ArrowIndex = runtimeScene.getObjects(dbbg.Arrow.name).findIndex(v => v.id === dbbg.Arrow.id);\r\nif (BgIndex === -1) {console.warn(\"Background not found.\");return;}\r\nif (NameIndex === -1) {console.warn(\"Name not found.\");return;}\r\nif (TextIndex === -1) {console.warn(\"Text not found.\");return;}\r\nif (ImgIndex === -1) {console.warn(\"Image not found.\");return;}\r\nif (ArrowIndex === -1) {console.warn(\"Arrow not found.\");return;}\r\nconst Bg = runtimeScene.getObjects(dbbg.Bg.name)[BgIndex];\r\nconst Name = runtimeScene.getObjects(dbbg.Name.name)[NameIndex];\r\nconst Text = runtimeScene.getObjects(dbbg.Text.name)[TextIndex];\r\nconst Img = runtimeScene.getObjects(dbbg.Img.name)[ImgIndex];\r\nconst Arrow = runtimeScene.getObjects(dbbg.Arrow.name)[ArrowIndex];\r\n\r\nif (Bg.getBehavior(\"Tween\").hasFinished(\"_DialogBoxBackGround.OpeningWidth\")) {\r\n    Name.hide(false);\r\n    Text.hide(false);\r\n    Img.hide(false);\r\n    dbbg.State = \"Typing\";\r\n    Bg.resetTimer(\"_DialogBoxBackGroundInterval\");\r\n    Bg.unpauseTimer(\"_DialogBoxBackGroundInterval\");\r\n    Bg.getBehavior(\"Tween\").removeTween(\"_DialogBoxBackGround.OpeningWidth\");\r\n    Bg.getBehavior(\"Tween\").removeTween(\"_DialogBoxBackGround.OpeningHeight\");\r\n    Bg.getBehavior(\"Tween\").removeTween(\"_DialogBoxBackGround.OpeningOpacity\");\r\n}\r\nif (Bg.getBehavior(\"Tween\").hasFinished(\"_DialogBoxBackGround.ClosingWidth\")) {\r\n    Bg.hide(true);\r\n    dbbg.State = \"Close\";\r\n    Bg.getBehavior(\"Tween\").removeTween(\"_DialogBoxBackGround.ClosingWidth\");\r\n    Bg.getBehavior(\"Tween\").removeTween(\"_DialogBoxBackGround.ClosingHeight\");\r\n    Bg.getBehavior(\"Tween\").removeTween(\"_DialogBoxBackGround.ClosingOpacity\");\r\n}\r\n\r\nif (dbbg.State == \"Typing\") {\r\n    if (Bg.timerElapsedTime(\"_DialogBoxBackGroundInterval\", dbbg.Interval)){\r\n        Text.setBBText(dbbg.TextBuffer.substring(0, Text.getBBText().length + 1));\r\n        Bg.resetTimer(\"_DialogBoxBackGroundInterval\");\r\n        if (dbbg.Se) {\r\n            dbbg.Se.play();\r\n        }\r\n        if (dbbg.TextBuffer.length <= Text.getBBText().length) {\r\n            Bg.pauseTimer(\"_DialogBoxBackGroundInterval\");\r\n            Arrow.hide(false);\r\n            dbbg.State = \"Open\";\r\n        }\r\n    }\r\n}\r\n\r\nif (dbbg.CntFlag) {\r\n    dbbg.Cnt++;\r\n    dbbg.CntFlag = false;\r\n}",
+                  "inlineCode": "let dbbg = eventsFunctionContext.getObjects(\"Object\")[0].getBehavior(eventsFunctionContext.getBehaviorName(\"Behavior\"))._DialogBoxBackGround;\r\n//let dbbg = eventsFunctionContext.getObjects(\"Object\")[0]._DialogBoxBackGround;\r\nif (!dbbg) {return}\r\nconst BgIndex = runtimeScene.getObjects(dbbg.Bg.name).findIndex(v => v.id === dbbg.Bg.id);\r\nconst NameIndex = runtimeScene.getObjects(dbbg.Name.name).findIndex(v => v.id === dbbg.Name.id);\r\nconst TextIndex = runtimeScene.getObjects(dbbg.Text.name).findIndex(v => v.id === dbbg.Text.id);\r\nconst ImgIndex = runtimeScene.getObjects(dbbg.Img.name).findIndex(v => v.id === dbbg.Img.id);\r\nconst ArrowIndex = runtimeScene.getObjects(dbbg.Arrow.name).findIndex(v => v.id === dbbg.Arrow.id);\r\nif (BgIndex === -1) {console.warn(\"Background not found.\");return;}\r\nif (NameIndex === -1) {console.warn(\"Name not found.\");return;}\r\nif (TextIndex === -1) {console.warn(\"Text not found.\");return;}\r\nif (ImgIndex === -1) {console.warn(\"Image not found.\");return;}\r\nif (ArrowIndex === -1) {console.warn(\"Arrow not found.\");return;}\r\nconst Bg = runtimeScene.getObjects(dbbg.Bg.name)[BgIndex];\r\nconst Name = runtimeScene.getObjects(dbbg.Name.name)[NameIndex];\r\nconst Text = runtimeScene.getObjects(dbbg.Text.name)[TextIndex];\r\nconst Img = runtimeScene.getObjects(dbbg.Img.name)[ImgIndex];\r\nconst Arrow = runtimeScene.getObjects(dbbg.Arrow.name)[ArrowIndex];\r\n\r\nif (Bg.getBehavior(\"Tween\").hasFinished(\"_DialogBoxBackGround.OpeningWidth\")) {\r\n    Name.hide(false);\r\n    Text.hide(false);\r\n    Img.hide(false);\r\n    dbbg.State = \"Typing\";\r\n    Bg.resetTimer(\"_DialogBoxBackGroundInterval\");\r\n    Bg.unpauseTimer(\"_DialogBoxBackGroundInterval\");\r\n    Bg.getBehavior(\"Tween\").removeTween(\"_DialogBoxBackGround.OpeningWidth\");\r\n    Bg.getBehavior(\"Tween\").removeTween(\"_DialogBoxBackGround.OpeningHeight\");\r\n    Bg.getBehavior(\"Tween\").removeTween(\"_DialogBoxBackGround.OpeningOpacity\");\r\n}\r\nif (Bg.getBehavior(\"Tween\").hasFinished(\"_DialogBoxBackGround.ClosingWidth\")) {\r\n    Bg.hide(true);\r\n    dbbg.State = \"Close\";\r\n    Bg.getBehavior(\"Tween\").removeTween(\"_DialogBoxBackGround.ClosingWidth\");\r\n    Bg.getBehavior(\"Tween\").removeTween(\"_DialogBoxBackGround.ClosingHeight\");\r\n    Bg.getBehavior(\"Tween\").removeTween(\"_DialogBoxBackGround.ClosingOpacity\");\r\n}\r\n\r\nif (dbbg.State == \"Typing\") {\r\n    if (Bg.timerElapsedTime(\"_DialogBoxBackGroundInterval\", dbbg.Interval)){\r\n        Text.setBBText(dbbg.TextBuffer.substring(0, Text.getBBText().length + 1));\r\n        Bg.resetTimer(\"_DialogBoxBackGroundInterval\");\r\n        if (dbbg.Se) {\r\n            dbbg.Se.play();\r\n        }\r\n        if (dbbg.TextBuffer.length <= Text.getBBText().length) {\r\n            Bg.pauseTimer(\"_DialogBoxBackGroundInterval\");\r\n            Arrow.hide(false);\r\n            dbbg.State = \"Open\";\r\n        }\r\n    }\r\n}\r\n\r\nif (dbbg.CntFlag) {\r\n    dbbg.Cnt++;\r\n    dbbg.CntFlag = false;\r\n}",
                   "parameterObjects": "",
                   "useStrict": true,
                   "eventsSheetExpanded": true
@@ -1108,7 +2007,7 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "let dbbg = eventsFunctionContext.getObjects(\"Object\")[0]._DialogBoxBackGround;\nif (!dbbg) {console.warn(\"Must be setup first.\");return;}\nif (dbbg.State != \"Close\") {return}\nconst BgIndex = runtimeScene.getObjects(dbbg.Bg.name).findIndex(v => v.id === dbbg.Bg.id);\nconst NameIndex = runtimeScene.getObjects(dbbg.Name.name).findIndex(v => v.id === dbbg.Name.id);\nconst TextIndex = runtimeScene.getObjects(dbbg.Text.name).findIndex(v => v.id === dbbg.Text.id);\nconst ImgIndex = runtimeScene.getObjects(dbbg.Img.name).findIndex(v => v.id === dbbg.Img.id);\nconst ArrowIndex = runtimeScene.getObjects(dbbg.Arrow.name).findIndex(v => v.id === dbbg.Arrow.id);\nif (BgIndex === -1) {console.warn(\"Background not found.\");return;}\nif (NameIndex === -1) {console.warn(\"Name not found.\");return;}\nif (TextIndex === -1) {console.warn(\"Text not found.\");return;}\nif (ImgIndex === -1) {console.warn(\"Image not found.\");return;}\nif (ArrowIndex === -1) {console.warn(\"Arrow not found.\");return;}\nconst Bg = runtimeScene.getObjects(dbbg.Bg.name)[BgIndex];\nconst Name = runtimeScene.getObjects(dbbg.Name.name)[NameIndex];\nconst Text = runtimeScene.getObjects(dbbg.Text.name)[TextIndex];\nconst Img = runtimeScene.getObjects(dbbg.Img.name)[ImgIndex];\nconst Arrow = runtimeScene.getObjects(dbbg.Arrow.name)[ArrowIndex];\n\nName.setBBText(eventsFunctionContext.getArgument(\"Name\"));\nText.setBBText(\"\");\nImg.setAnimationName(eventsFunctionContext.getArgument(\"Img\"));\ndbbg.TextBuffer = eventsFunctionContext.getArgument(\"Text\");\n\nBg.hide(false);\n\nBg.setWidth(1);\nBg.setHeight(1);\nBg.setOpacity(0);\nBg.getBehavior(\"Tween\").addObjectWidthTween(\"_DialogBoxBackGround.OpeningWidth\", dbbg.Width, \"easeOutCubic\", dbbg.Duration, false);\nBg.getBehavior(\"Tween\").addObjectHeightTween(\"_DialogBoxBackGround.OpeningHeight\", dbbg.Height, \"easeOutCubic\", dbbg.Duration, false);\nBg.getBehavior(\"Tween\").addObjectOpacityTween(\"_DialogBoxBackGround.OpeningOpacity\", 255, \"linear\", dbbg.Duration, false);\ndbbg.State = \"Opening\";\ndbbg.Cnt = 0;\ndbbg.CntFlag = false;",
+                  "inlineCode": "let dbbg = eventsFunctionContext.getObjects(\"Object\")[0].getBehavior(eventsFunctionContext.getBehaviorName(\"Behavior\"))._DialogBoxBackGround;\n//let dbbg = eventsFunctionContext.getObjects(\"Object\")[0]._DialogBoxBackGround;\nif (!dbbg) {console.warn(\"Must be setup first.\");return;}\nif (dbbg.State != \"Close\") {return}\nconst BgIndex = runtimeScene.getObjects(dbbg.Bg.name).findIndex(v => v.id === dbbg.Bg.id);\nconst NameIndex = runtimeScene.getObjects(dbbg.Name.name).findIndex(v => v.id === dbbg.Name.id);\nconst TextIndex = runtimeScene.getObjects(dbbg.Text.name).findIndex(v => v.id === dbbg.Text.id);\nconst ImgIndex = runtimeScene.getObjects(dbbg.Img.name).findIndex(v => v.id === dbbg.Img.id);\nconst ArrowIndex = runtimeScene.getObjects(dbbg.Arrow.name).findIndex(v => v.id === dbbg.Arrow.id);\nif (BgIndex === -1) {console.warn(\"Background not found.\");return;}\nif (NameIndex === -1) {console.warn(\"Name not found.\");return;}\nif (TextIndex === -1) {console.warn(\"Text not found.\");return;}\nif (ImgIndex === -1) {console.warn(\"Image not found.\");return;}\nif (ArrowIndex === -1) {console.warn(\"Arrow not found.\");return;}\nconst Bg = runtimeScene.getObjects(dbbg.Bg.name)[BgIndex];\nconst Name = runtimeScene.getObjects(dbbg.Name.name)[NameIndex];\nconst Text = runtimeScene.getObjects(dbbg.Text.name)[TextIndex];\nconst Img = runtimeScene.getObjects(dbbg.Img.name)[ImgIndex];\nconst Arrow = runtimeScene.getObjects(dbbg.Arrow.name)[ArrowIndex];\n\nName.setBBText(eventsFunctionContext.getArgument(\"Name\"));\nText.setBBText(\"\");\nImg.setAnimationName(eventsFunctionContext.getArgument(\"Img\"));\ndbbg.TextBuffer = eventsFunctionContext.getArgument(\"Text\");\n\nBg.hide(false);\n\nBg.setWidth(1);\nBg.setHeight(1);\nBg.setOpacity(0);\nBg.getBehavior(\"Tween\").addObjectWidthTween(\"_DialogBoxBackGround.OpeningWidth\", dbbg.Width, \"easeOutCubic\", dbbg.Duration, false);\nBg.getBehavior(\"Tween\").addObjectHeightTween(\"_DialogBoxBackGround.OpeningHeight\", dbbg.Height, \"easeOutCubic\", dbbg.Duration, false);\nBg.getBehavior(\"Tween\").addObjectOpacityTween(\"_DialogBoxBackGround.OpeningOpacity\", 255, \"linear\", dbbg.Duration, false);\ndbbg.State = \"Opening\";\ndbbg.Cnt = 0;\ndbbg.CntFlag = false;",
                   "parameterObjects": "",
                   "useStrict": true,
                   "eventsSheetExpanded": true
@@ -1169,7 +2068,7 @@
               "objectGroups": []
             },
             {
-              "description": "Close the Dialog Box.",
+              "description": "Close the Dialog Box.\nNote that you cannot close the Dialog Box while typing.",
               "fullName": "Close Dialog Box",
               "functionType": "Action",
               "name": "Close",
@@ -1180,7 +2079,7 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "let dbbg = eventsFunctionContext.getObjects(\"Object\")[0]._DialogBoxBackGround;\nif (!dbbg) {console.warn(\"Must be setup first.\");return;}\nif (dbbg.State != \"Open\") {return}\nconst BgIndex = runtimeScene.getObjects(dbbg.Bg.name).findIndex(v => v.id === dbbg.Bg.id);\nconst NameIndex = runtimeScene.getObjects(dbbg.Name.name).findIndex(v => v.id === dbbg.Name.id);\nconst TextIndex = runtimeScene.getObjects(dbbg.Text.name).findIndex(v => v.id === dbbg.Text.id);\nconst ImgIndex = runtimeScene.getObjects(dbbg.Img.name).findIndex(v => v.id === dbbg.Img.id);\nconst ArrowIndex = runtimeScene.getObjects(dbbg.Arrow.name).findIndex(v => v.id === dbbg.Arrow.id);\nif (BgIndex === -1) {console.warn(\"Background not found.\");return;}\nif (NameIndex === -1) {console.warn(\"Name not found.\");return;}\nif (TextIndex === -1) {console.warn(\"Text not found.\");return;}\nif (ImgIndex === -1) {console.warn(\"Image not found.\");return;}\nif (ArrowIndex === -1) {console.warn(\"Arrow not found.\");return;}\nconst Bg = runtimeScene.getObjects(dbbg.Bg.name)[BgIndex];\nconst Name = runtimeScene.getObjects(dbbg.Name.name)[NameIndex];\nconst Text = runtimeScene.getObjects(dbbg.Text.name)[TextIndex];\nconst Img = runtimeScene.getObjects(dbbg.Img.name)[ImgIndex];\nconst Arrow = runtimeScene.getObjects(dbbg.Arrow.name)[ArrowIndex];\n\nName.hide(true);\nText.hide(true);\nImg.hide(true);\nArrow.hide(true);\n\nBg.getBehavior(\"Tween\").addObjectWidthTween(\"_DialogBoxBackGround.ClosingWidth\", 1, \"easeInCubic\", dbbg.Duration, false);\nBg.getBehavior(\"Tween\").addObjectHeightTween(\"_DialogBoxBackGround.ClosingHeight\", 1, \"easeInCubic\", dbbg.Duration, false);\nBg.getBehavior(\"Tween\").addObjectOpacityTween(\"_DialogBoxBackGround.ClosingOpacity\", 0, \"linear\", dbbg.Duration, false);\ndbbg.State = \"Closing\";",
+                  "inlineCode": "let dbbg = eventsFunctionContext.getObjects(\"Object\")[0].getBehavior(eventsFunctionContext.getBehaviorName(\"Behavior\"))._DialogBoxBackGround;\n//let dbbg = eventsFunctionContext.getObjects(\"Object\")[0]._DialogBoxBackGround;\nif (!dbbg) {console.warn(\"Must be setup first.\");return;}\nif (dbbg.State != \"Open\") {return}\nconst BgIndex = runtimeScene.getObjects(dbbg.Bg.name).findIndex(v => v.id === dbbg.Bg.id);\nconst NameIndex = runtimeScene.getObjects(dbbg.Name.name).findIndex(v => v.id === dbbg.Name.id);\nconst TextIndex = runtimeScene.getObjects(dbbg.Text.name).findIndex(v => v.id === dbbg.Text.id);\nconst ImgIndex = runtimeScene.getObjects(dbbg.Img.name).findIndex(v => v.id === dbbg.Img.id);\nconst ArrowIndex = runtimeScene.getObjects(dbbg.Arrow.name).findIndex(v => v.id === dbbg.Arrow.id);\nif (BgIndex === -1) {console.warn(\"Background not found.\");return;}\nif (NameIndex === -1) {console.warn(\"Name not found.\");return;}\nif (TextIndex === -1) {console.warn(\"Text not found.\");return;}\nif (ImgIndex === -1) {console.warn(\"Image not found.\");return;}\nif (ArrowIndex === -1) {console.warn(\"Arrow not found.\");return;}\nconst Bg = runtimeScene.getObjects(dbbg.Bg.name)[BgIndex];\nconst Name = runtimeScene.getObjects(dbbg.Name.name)[NameIndex];\nconst Text = runtimeScene.getObjects(dbbg.Text.name)[TextIndex];\nconst Img = runtimeScene.getObjects(dbbg.Img.name)[ImgIndex];\nconst Arrow = runtimeScene.getObjects(dbbg.Arrow.name)[ArrowIndex];\n\nName.hide(true);\nText.hide(true);\nImg.hide(true);\nArrow.hide(true);\n\nBg.getBehavior(\"Tween\").addObjectWidthTween(\"_DialogBoxBackGround.ClosingWidth\", 1, \"easeInCubic\", dbbg.Duration, false);\nBg.getBehavior(\"Tween\").addObjectHeightTween(\"_DialogBoxBackGround.ClosingHeight\", 1, \"easeInCubic\", dbbg.Duration, false);\nBg.getBehavior(\"Tween\").addObjectOpacityTween(\"_DialogBoxBackGround.ClosingOpacity\", 0, \"linear\", dbbg.Duration, false);\ndbbg.State = \"Closing\";",
                   "parameterObjects": "",
                   "useStrict": true,
                   "eventsSheetExpanded": true
@@ -1211,7 +2110,7 @@
               "objectGroups": []
             },
             {
-              "description": "Change the Dialog Box Text.",
+              "description": "Change the Dialog Box Text.\nNote that you cannot change it while the Dialog Box is typing.",
               "fullName": "Change Dialog Box Text",
               "functionType": "Action",
               "name": "ChangeText",
@@ -1222,7 +2121,7 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "let dbbg = eventsFunctionContext.getObjects(\"Object\")[0]._DialogBoxBackGround;\nif (!dbbg) {console.warn(\"Must be setup first.\");return;}\nif (dbbg.State != \"Open\") {return}\nconst BgIndex = runtimeScene.getObjects(dbbg.Bg.name).findIndex(v => v.id === dbbg.Bg.id);\nconst TextIndex = runtimeScene.getObjects(dbbg.Text.name).findIndex(v => v.id === dbbg.Text.id);\nif (BgIndex === -1) {console.warn(\"Background not found.\");return;}\nif (TextIndex === -1) {console.warn(\"Text not found.\");return;}\nconst Bg = runtimeScene.getObjects(dbbg.Bg.name)[BgIndex];\nconst Text = runtimeScene.getObjects(dbbg.Text.name)[TextIndex];\n\nconst ArrowIndex = runtimeScene.getObjects(dbbg.Arrow.name).findIndex(v => v.id === dbbg.Arrow.id);\nif (ArrowIndex === -1) {console.warn(\"Arrow not found.\");return;}\nconst Arrow = runtimeScene.getObjects(dbbg.Arrow.name)[ArrowIndex];\nArrow.hide(true);\n\nText.setBBText(\"\");\ndbbg.TextBuffer = eventsFunctionContext.getArgument(\"Text\");\ndbbg.State = \"Typing\";\nBg.resetTimer(\"_DialogBoxBackGroundInterval\");\nBg.unpauseTimer(\"_DialogBoxBackGroundInterval\");\ndbbg.CntFlag = true;",
+                  "inlineCode": "let dbbg = eventsFunctionContext.getObjects(\"Object\")[0].getBehavior(eventsFunctionContext.getBehaviorName(\"Behavior\"))._DialogBoxBackGround;\n//let dbbg = eventsFunctionContext.getObjects(\"Object\")[0]._DialogBoxBackGround;\nif (!dbbg) {console.warn(\"Must be setup first.\");return;}\nif (dbbg.State != \"Open\") {return}\nconst BgIndex = runtimeScene.getObjects(dbbg.Bg.name).findIndex(v => v.id === dbbg.Bg.id);\nconst TextIndex = runtimeScene.getObjects(dbbg.Text.name).findIndex(v => v.id === dbbg.Text.id);\nif (BgIndex === -1) {console.warn(\"Background not found.\");return;}\nif (TextIndex === -1) {console.warn(\"Text not found.\");return;}\nconst Bg = runtimeScene.getObjects(dbbg.Bg.name)[BgIndex];\nconst Text = runtimeScene.getObjects(dbbg.Text.name)[TextIndex];\n\nconst ArrowIndex = runtimeScene.getObjects(dbbg.Arrow.name).findIndex(v => v.id === dbbg.Arrow.id);\nif (ArrowIndex === -1) {console.warn(\"Arrow not found.\");return;}\nconst Arrow = runtimeScene.getObjects(dbbg.Arrow.name)[ArrowIndex];\nArrow.hide(true);\n\nText.setBBText(\"\");\ndbbg.TextBuffer = eventsFunctionContext.getArgument(\"Text\");\ndbbg.State = \"Typing\";\nBg.resetTimer(\"_DialogBoxBackGroundInterval\");\nBg.unpauseTimer(\"_DialogBoxBackGroundInterval\");\ndbbg.CntFlag = true;",
                   "parameterObjects": "",
                   "useStrict": true,
                   "eventsSheetExpanded": true
@@ -1263,7 +2162,7 @@
               "objectGroups": []
             },
             {
-              "description": "Change the Name, Image, and Text in the Dialog Box.",
+              "description": "Change the Name, Image, and Text in the Dialog Box.\nNote that you cannot change it while the Dialog Box is typing.",
               "fullName": "Change Dialog Box contents",
               "functionType": "Action",
               "name": "ChangeNameImageText",
@@ -1274,7 +2173,7 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "let dbbg = eventsFunctionContext.getObjects(\"Object\")[0]._DialogBoxBackGround;\nif (!dbbg) {console.warn(\"Must be setup first.\");return;}\nif (dbbg.State != \"Open\") {return}\nconst BgIndex = runtimeScene.getObjects(dbbg.Bg.name).findIndex(v => v.id === dbbg.Bg.id);\nconst NameIndex = runtimeScene.getObjects(dbbg.Name.name).findIndex(v => v.id === dbbg.Name.id);\nconst TextIndex = runtimeScene.getObjects(dbbg.Text.name).findIndex(v => v.id === dbbg.Text.id);\nconst ImgIndex = runtimeScene.getObjects(dbbg.Img.name).findIndex(v => v.id === dbbg.Img.id);\nif (BgIndex === -1) {console.warn(\"Background not found.\");return;}\nif (NameIndex === -1) {console.warn(\"Name not found.\");return;}\nif (TextIndex === -1) {console.warn(\"Text not found.\");return;}\nif (ImgIndex === -1) {console.warn(\"Image not found.\");return;}\nconst Bg = runtimeScene.getObjects(dbbg.Bg.name)[BgIndex];\nconst Name = runtimeScene.getObjects(dbbg.Name.name)[NameIndex];\nconst Text = runtimeScene.getObjects(dbbg.Text.name)[TextIndex];\nconst Img = runtimeScene.getObjects(dbbg.Img.name)[ImgIndex];\n\nconst ArrowIndex = runtimeScene.getObjects(dbbg.Arrow.name).findIndex(v => v.id === dbbg.Arrow.id);\nif (ArrowIndex === -1) {console.warn(\"Arrow not found.\");return;}\nconst Arrow = runtimeScene.getObjects(dbbg.Arrow.name)[ArrowIndex];\nArrow.hide(true);\n\nName.setBBText(eventsFunctionContext.getArgument(\"Name\"));\nText.setBBText(\"\");\nImg.setAnimationName(eventsFunctionContext.getArgument(\"Img\"));\ndbbg.TextBuffer = eventsFunctionContext.getArgument(\"Text\");\ndbbg.State = \"Typing\";\nBg.resetTimer(\"_DialogBoxBackGroundInterval\");\nBg.unpauseTimer(\"_DialogBoxBackGroundInterval\");\ndbbg.CntFlag = true;",
+                  "inlineCode": "let dbbg = eventsFunctionContext.getObjects(\"Object\")[0].getBehavior(eventsFunctionContext.getBehaviorName(\"Behavior\"))._DialogBoxBackGround;\n//let dbbg = eventsFunctionContext.getObjects(\"Object\")[0]._DialogBoxBackGround;\nif (!dbbg) {console.warn(\"Must be setup first.\");return;}\nif (dbbg.State != \"Open\") {return}\nconst BgIndex = runtimeScene.getObjects(dbbg.Bg.name).findIndex(v => v.id === dbbg.Bg.id);\nconst NameIndex = runtimeScene.getObjects(dbbg.Name.name).findIndex(v => v.id === dbbg.Name.id);\nconst TextIndex = runtimeScene.getObjects(dbbg.Text.name).findIndex(v => v.id === dbbg.Text.id);\nconst ImgIndex = runtimeScene.getObjects(dbbg.Img.name).findIndex(v => v.id === dbbg.Img.id);\nif (BgIndex === -1) {console.warn(\"Background not found.\");return;}\nif (NameIndex === -1) {console.warn(\"Name not found.\");return;}\nif (TextIndex === -1) {console.warn(\"Text not found.\");return;}\nif (ImgIndex === -1) {console.warn(\"Image not found.\");return;}\nconst Bg = runtimeScene.getObjects(dbbg.Bg.name)[BgIndex];\nconst Name = runtimeScene.getObjects(dbbg.Name.name)[NameIndex];\nconst Text = runtimeScene.getObjects(dbbg.Text.name)[TextIndex];\nconst Img = runtimeScene.getObjects(dbbg.Img.name)[ImgIndex];\n\nconst ArrowIndex = runtimeScene.getObjects(dbbg.Arrow.name).findIndex(v => v.id === dbbg.Arrow.id);\nif (ArrowIndex === -1) {console.warn(\"Arrow not found.\");return;}\nconst Arrow = runtimeScene.getObjects(dbbg.Arrow.name)[ArrowIndex];\nArrow.hide(true);\n\nName.setBBText(eventsFunctionContext.getArgument(\"Name\"));\nText.setBBText(\"\");\nImg.setAnimationName(eventsFunctionContext.getArgument(\"Img\"));\ndbbg.TextBuffer = eventsFunctionContext.getArgument(\"Text\");\ndbbg.State = \"Typing\";\nBg.resetTimer(\"_DialogBoxBackGroundInterval\");\nBg.unpauseTimer(\"_DialogBoxBackGroundInterval\");\ndbbg.CntFlag = true;",
                   "parameterObjects": "",
                   "useStrict": true,
                   "eventsSheetExpanded": true
@@ -1346,7 +2245,7 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "let dbbg = eventsFunctionContext.getObjects(\"Object\")[0]._DialogBoxBackGround;\nif (!dbbg) {console.warn(\"Must be setup first.\");return;}\n//runtimeScene.getSoundManager().unloadAudio()\ndbbg.Se = undefined;\nif (eventsFunctionContext.getArgument(\"Se\") != \"\") {\n    dbbg.Se = runtimeScene.getSoundManager().createHowlerSound(eventsFunctionContext.getArgument(\"Se\"), false, 1, false, 1);\n}",
+                  "inlineCode": "let dbbg = eventsFunctionContext.getObjects(\"Object\")[0].getBehavior(eventsFunctionContext.getBehaviorName(\"Behavior\"))._DialogBoxBackGround;\n//let dbbg = eventsFunctionContext.getObjects(\"Object\")[0]._DialogBoxBackGround;\nif (!dbbg) {console.warn(\"Must be setup first.\");return;}\n//runtimeScene.getSoundManager().unloadAudio()\ndbbg.Se = undefined;\nif (eventsFunctionContext.getArgument(\"TypingSound\") != \"\") {\n    dbbg.Se = runtimeScene.getSoundManager().createHowlerSound(eventsFunctionContext.getArgument(\"TypingSound\"), false, 1, false, 1);\n}",
                   "parameterObjects": "",
                   "useStrict": true,
                   "eventsSheetExpanded": true
@@ -1378,7 +2277,7 @@
                   "defaultValue": "",
                   "description": "Audio file name (The audio file must be registered as a resource!)",
                   "longDescription": "",
-                  "name": "Se",
+                  "name": "TypingSound",
                   "optional": false,
                   "supplementaryInformation": "",
                   "type": "string"
@@ -1398,7 +2297,7 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "let dbbg = eventsFunctionContext.getObjects(\"Object\")[0]._DialogBoxBackGround;\nif (!dbbg) {console.warn(\"Must be setup first.\");return;}\ndbbg.Interval = eventsFunctionContext.getArgument(\"Interval\");",
+                  "inlineCode": "let dbbg = eventsFunctionContext.getObjects(\"Object\")[0].getBehavior(eventsFunctionContext.getBehaviorName(\"Behavior\"))._DialogBoxBackGround;\n//let dbbg = eventsFunctionContext.getObjects(\"Object\")[0]._DialogBoxBackGround;\nif (!dbbg) {console.warn(\"Must be setup first.\");return;}\ndbbg.Interval = eventsFunctionContext.getArgument(\"Interval\");",
                   "parameterObjects": "",
                   "useStrict": true,
                   "eventsSheetExpanded": true
@@ -1450,7 +2349,7 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "let dbbg = eventsFunctionContext.getObjects(\"Object\")[0]._DialogBoxBackGround;\nif (!dbbg) {console.warn(\"Must be setup first.\");return;}\nif (dbbg.State != \"Typing\") {return}\nconst TextIndex = runtimeScene.getObjects(dbbg.Text.name).findIndex(v => v.id === dbbg.Text.id);\nconst ArrowIndex = runtimeScene.getObjects(dbbg.Arrow.name).findIndex(v => v.id === dbbg.Arrow.id);\nif (TextIndex === -1) {console.warn(\"Text not found.\");return;}\nif (ArrowIndex === -1) {console.warn(\"Arrow not found.\");return;}\nconst Text = runtimeScene.getObjects(dbbg.Text.name)[TextIndex];\nconst Arrow = runtimeScene.getObjects(dbbg.Arrow.name)[ArrowIndex];\n\nArrow.hide(true);\n\nText.setBBText(dbbg.TextBuffer);",
+                  "inlineCode": "let dbbg = eventsFunctionContext.getObjects(\"Object\")[0].getBehavior(eventsFunctionContext.getBehaviorName(\"Behavior\"))._DialogBoxBackGround;\n//let dbbg = eventsFunctionContext.getObjects(\"Object\")[0]._DialogBoxBackGround;\nif (!dbbg) {console.warn(\"Must be setup first.\");return;}\nif (dbbg.State != \"Typing\") {return}\nconst TextIndex = runtimeScene.getObjects(dbbg.Text.name).findIndex(v => v.id === dbbg.Text.id);\nconst ArrowIndex = runtimeScene.getObjects(dbbg.Arrow.name).findIndex(v => v.id === dbbg.Arrow.id);\nif (TextIndex === -1) {console.warn(\"Text not found.\");return;}\nif (ArrowIndex === -1) {console.warn(\"Arrow not found.\");return;}\nconst Text = runtimeScene.getObjects(dbbg.Text.name)[TextIndex];\nconst Arrow = runtimeScene.getObjects(dbbg.Arrow.name)[ArrowIndex];\n\nArrow.hide(true);\n\nText.setBBText(dbbg.TextBuffer);",
                   "parameterObjects": "",
                   "useStrict": true,
                   "eventsSheetExpanded": true
@@ -1492,7 +2391,7 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "let dbbg = eventsFunctionContext.getObjects(\"Object\")[0]._DialogBoxBackGround;\nif (!dbbg) {eventsFunctionContext.returnValue = false;return;}\neventsFunctionContext.returnValue = dbbg.State == \"Open\";",
+                  "inlineCode": "let dbbg = eventsFunctionContext.getObjects(\"Object\")[0].getBehavior(eventsFunctionContext.getBehaviorName(\"Behavior\"))._DialogBoxBackGround;\n//let dbbg = eventsFunctionContext.getObjects(\"Object\")[0]._DialogBoxBackGround;\nif (!dbbg) {eventsFunctionContext.returnValue = false;return;}\neventsFunctionContext.returnValue = dbbg.State == \"Open\";",
                   "parameterObjects": "",
                   "useStrict": true,
                   "eventsSheetExpanded": false
@@ -1534,7 +2433,7 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "let dbbg = eventsFunctionContext.getObjects(\"Object\")[0]._DialogBoxBackGround;\nif (!dbbg) {eventsFunctionContext.returnValue = false;return;}\neventsFunctionContext.returnValue = dbbg.State == \"Typing\";",
+                  "inlineCode": "let dbbg = eventsFunctionContext.getObjects(\"Object\")[0].getBehavior(eventsFunctionContext.getBehaviorName(\"Behavior\"))._DialogBoxBackGround;\n//let dbbg = eventsFunctionContext.getObjects(\"Object\")[0]._DialogBoxBackGround;\nif (!dbbg) {eventsFunctionContext.returnValue = false;return;}\neventsFunctionContext.returnValue = dbbg.State == \"Typing\";",
                   "parameterObjects": "",
                   "useStrict": true,
                   "eventsSheetExpanded": false
@@ -1576,7 +2475,7 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "let dbbg = eventsFunctionContext.getObjects(\"Object\")[0]._DialogBoxBackGround;\nif (!dbbg) {eventsFunctionContext.returnValue = false;return;}\neventsFunctionContext.returnValue = dbbg.State == \"Close\";",
+                  "inlineCode": "let dbbg = eventsFunctionContext.getObjects(\"Object\")[0].getBehavior(eventsFunctionContext.getBehaviorName(\"Behavior\"))._DialogBoxBackGround;\n//let dbbg = eventsFunctionContext.getObjects(\"Object\")[0]._DialogBoxBackGround;\nif (!dbbg) {eventsFunctionContext.returnValue = false;return;}\neventsFunctionContext.returnValue = dbbg.State == \"Close\";",
                   "parameterObjects": "",
                   "useStrict": true,
                   "eventsSheetExpanded": false
@@ -1618,7 +2517,7 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "let dbbg = eventsFunctionContext.getObjects(\"Object\")[0]._DialogBoxBackGround;\nif (!dbbg) {eventsFunctionContext.returnValue = false;return;}\neventsFunctionContext.returnValue = dbbg.Cnt == eventsFunctionContext.getArgument(\"Num\");",
+                  "inlineCode": "let dbbg = eventsFunctionContext.getObjects(\"Object\")[0].getBehavior(eventsFunctionContext.getBehaviorName(\"Behavior\"))._DialogBoxBackGround;\n//let dbbg = eventsFunctionContext.getObjects(\"Object\")[0]._DialogBoxBackGround;\nif (!dbbg) {eventsFunctionContext.returnValue = false;return;}\neventsFunctionContext.returnValue = dbbg.Cnt == eventsFunctionContext.getArgument(\"Num\");",
                   "parameterObjects": "",
                   "useStrict": true,
                   "eventsSheetExpanded": false
@@ -1670,7 +2569,7 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "let dbbg = eventsFunctionContext.getObjects(\"Object\")[0]._DialogBoxBackGround;\nif (!dbbg) {eventsFunctionContext.returnValue = 0;return;}\neventsFunctionContext.returnValue = dbbg.Cnt;",
+                  "inlineCode": "let dbbg = eventsFunctionContext.getObjects(\"Object\")[0].getBehavior(eventsFunctionContext.getBehaviorName(\"Behavior\"))._DialogBoxBackGround;\n//let dbbg = eventsFunctionContext.getObjects(\"Object\")[0]._DialogBoxBackGround;\nif (!dbbg) {eventsFunctionContext.returnValue = 0;return;}\neventsFunctionContext.returnValue = dbbg.Cnt;",
                   "parameterObjects": "",
                   "useStrict": true,
                   "eventsSheetExpanded": false
@@ -1728,7 +2627,7 @@
               "description": "",
               "extraInformation": [],
               "hidden": false,
-              "name": "Se"
+              "name": "TypingSound"
             },
             {
               "value": "",
